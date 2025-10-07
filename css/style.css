@@ -1,0 +1,90 @@
+/* ------------------------- */
+/* VARIÁVEIS GLOBAIS E ESTILOS BASE */
+/* ------------------------- */
+:root {
+    --dark-blue: #0A192F;
+    --neon-green: #39FF14;
+    --light-gray: #A8B2D1;
+    --white: #F5F5F5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+/* Classe utilitária para nosso fundo principal */
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+/* ---------------------------------- */
+/* PERSONALIZAÇÃO DE COMPONENTES BOOTSTRAP */
+/* ---------------------------------- */
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--neon-green) !important; /* !important para sobrescrever o Bootstrap */
+}
+
+/* Links da Navbar */
+.navbar-dark .nav-item .nav-link {
+    color: var(--white);
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+    color: var(--neon-green);
+}
+
+/* Botões Neon Personalizados */
+.btn-neon {
+    background-color: var(--neon-green);
+    color: var(--dark-blue);
+    font-weight: 600;
+    border: 1px solid var(--neon-green);
+    transition: transform 0.3s ease;
+}
+
+.btn-neon:hover {
+    transform: translateY(-3px);
+    background-color: var(--neon-green);
+    color: var(--dark-blue);
+}
+
+.btn-outline-neon {
+    color: var(--neon-green);
+    border: 1px solid var(--neon-green);
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-neon:hover {
+    transform: translateY(-3px);
+    background-color: var(--neon-green);
+    color: var(--dark-blue);
+}
+
+
+/* ------------------------- */
+/* ESTILOS DA SEÇÃO HERO     */
+/* ------------------------- */
+
+.hero h1, .hero .lead {
+    color: var(--white);
+}
+
+.hero .lead {
+    color: var(--light-gray);
+}
+
+/* ------------------------- */
+/* RODAPÉ                    */
+/* ------------------------- */
+
+.main-footer a:hover {
+    color: var(--neon-green) !important;
+}
